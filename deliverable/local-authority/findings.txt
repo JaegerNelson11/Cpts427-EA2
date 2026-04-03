@@ -1,0 +1,21 @@
+Attempted to log in to the site with random user and password
+Failed to log in
+Inspect element after failed log in when analyzing sources reveals this secure.js file:
+
+
+
+function checkPassword(username, password)
+{
+  if( username === 'admin' && password === 'strongPassword098765' )
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+
+
+Using this discovered username and password succesfully completes the log in proccess and revales the hidden key:
+picoCTF{j5_15_7r4n5p4r3n7_a8788e61}
