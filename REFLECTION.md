@@ -1,13 +1,13 @@
-# EA2 Reflection Report
+# EA2 Reflection Report - PicoCTF
 
 ## Activity Description
-[What were the expectations and what did you do?]
+To align with my career goals in software engineering and cybersecurity, I participated in picoCTF, a well known Capture The Flag platform. My focus was spent across across multiple domains. I complteted challenges in Cryptography (Shared Secrets), Forensics (Flag in Flame, Ph4nt0m 1ntrud3r), Web Exploitation (WebDecode, Local Authority), and Binary Exploitation (heap 0). The expectations were to apply theoretical security concepts to practical vulnerabilities. I exploited a Diffie-Hellman key exchange, reversed Base64 and hexadecimal encodings, analyzed raw PCAP network traffic, manipulated DOM elements, triggered a heap buffer overflow, and bypassed client side authentication.
 
 ## Technical Decisions
-[What decisions did you take from a technical perspective throughout this activity/event? Justify your architecture choices.]
+For Shared Secrets, I recognized a vulnerability in the Diffie-Hellman implementation where the client secret was leaked. I decided to write a custom Python script to compute the shared key and XOR decrypt the flag instead of attempting manual calculation. For the Forensics challenges, I relied heavily on command line manipulation, using Windows certutil and PowerShell scripts to decode deeply nested Base64 and hex strings in Flag in Flame. For heap 0, after analyzing the C source code, I decided to exploit the unsafe scanf function by intentionally passing a 40 byte string to overflow a 32 byte heap buffer and overwrite the adjacent safe variable. For Local Authority and WebDecode, my strategy was client side inspection using browser developer tools, successfully locating hardcoded credentials in an exposed JavaScript file and hidden encoded attributes in the HTML DOM.
 
 ## Contributions
-[Did you participate alone or with a team? Detail your specific individual contributions.]
+I did these challenges individually. To ensure proper project management and mimic professional software engineering practices, I used a structured Git workflow. I established a public GitHub repository, created separate issues to track the requirements of each challenge, developed my solutions and evidence on isolated feature branches, and merged my documentation via Pull Requests to the main branch.
 
 ## Quality Assessment
-[How would you assess your participation? Discuss trade-offs, any failures, and what you would do differently if you could redo the event. List concrete next steps.]
+Overall, this activity was very successful and provided hands on experience with diverse attack types. I learned that theoretical concepts like Diffie-Hellman require near perfect implementation, as a single leaked variable compromises the entire exchange. The heap 0 challenge was insightful, proving that buffer overflows are not restricted strictly to the stack. If I could redo the event, I would spend more time initially analyzing the source code or raw data before jumping to complex tools, as seen in Local Authority where the credentials were left directly in the open within a public script. Moving forward, my next step is to explore more advanced binary exploitation and server side web vulnerabilities to better understand how to defend against them in my own software projects.
