@@ -1,0 +1,14 @@
+Inspecting elemnt on the about page revelaed this interesting html block:
+<section class="about" notify_true="cGljb0NURnt3ZWJfc3VjYzNzc2Z1bGx5X2QzYzBkZWRfMDJjZGNiNTl9">
+   <h1>
+    Try inspecting the page!! You might find it there
+   </h1>
+   <!-- .about-container -->
+  </section>
+
+
+The interesting bit being this random string within the block:
+"cGljb0NURnt3ZWJfc3VjYzNzc2Z1bGx5X2QzYzBkZWRfMDJjZGNiNTl9"
+
+When decoded, reveled the key:
+picoCTF{web_succ3ssfully_d3c0ded_02cdcb59}
