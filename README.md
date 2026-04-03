@@ -28,6 +28,8 @@ For this Extracurricular Assignment, I participated in picoCTF, an online cybers
   **Challenge Completion:** Successful submission of the decrypted flag on the picoCTF platform.
   ![picoCTF Success Banner](evidence/SharedSecrets3_done.png)
 
+***
+
 ### 2. Flag in Flame (Forensics)
 * **Location:** deliverable/flag-in-flame
 * **Description:** An incident response scenario involving a suspicious, massive log file that was actually encoded data.
@@ -38,16 +40,18 @@ For this Extracurricular Assignment, I participated in picoCTF, an online cybers
   ![Challenge Description](evidence/FlagInFlame1_desc.png)
 
   **Base64 Decoding:** Using certutil to decode the fake log file into a hidden PNG image.
-  ![Base64 Decoding Command](evidence/FlagInFlame2_uncoverHiddenlmage.png)
+  ![Base64 Decoding Command](evidence/FlagInFlame2_uncoverHiddenImage.png)
 
   **Artifact Discovery:** The decoded image revealing the hex-encoded string at the bottom.
-  ![Revealed Hex String Image](evidence/FlagInFlame3_hiddenlmage.png)
+  ![Revealed Hex String Image](evidence/FlagInFlame3_hiddenImage.png)
 
   **Hexadecimal Decoding:** Running the PowerShell command to translate the hex string into the readable flag.
   ![PowerShell Hex Decoding](evidence/FlagInFlame4_decodeHex.png)
 
   **Challenge Completion:** Successful submission of the decoded flag on the picoCTF platform.
   ![picoCTF Success Banner](evidence/FlagInFlame5_done.png)
+
+***
 
 ### 3. WebDecode (Web Exploitation)
 * **Location:** deliverable/web-decode
@@ -70,6 +74,8 @@ For this Extracurricular Assignment, I participated in picoCTF, an online cybers
   **Challenge Completion:** Successful submission of the decoded flag on the picoCTF platform.
   ![picoCTF Success Banner](evidence/WebDecode5_done.png)
 
+***
+
 ### 4. heap 0 (Binary Exploitation)
 * **Location:** deliverable/heap-0
 * **Description:** A memory corruption challenge demonstrating that buffer overflows are not just a stack concern, but can also occur on the heap.
@@ -84,6 +90,8 @@ For this Extracurricular Assignment, I participated in picoCTF, an online cybers
 
   **Challenge Completion:** Successful submission of the flag on the picoCTF platform.
   ![picoCTF Success Banner](evidence/Heap03_done.png)
+
+***
 
 ### 5. Local Authority (Web Exploitation)
 * **Location:** deliverable/local-authority
@@ -109,7 +117,7 @@ For this Extracurricular Assignment, I participated in picoCTF, an online cybers
   **Challenge Completion:** Successful submission of the flag on the picoCTF platform.
   ![picoCTF Success Banner](evidence/LocalAuthority6_done.png)
 
-  ***
+***
 
 ## Extracurricular Reflection
 
