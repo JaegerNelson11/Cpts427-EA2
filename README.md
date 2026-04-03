@@ -5,7 +5,8 @@ For this Extracurricular Assignment, I participated in picoCTF, an online cybers
 
 ## Deliverable Information
 * **Tech Stack Used:** Python, Windows PowerShell, Web Developer Tools, Git.
-* **Directory Structure:** * All source code, scripts, and downloaded challenge files are organized by challenge inside the deliverable directory.
+* **Directory Structure:** 
+  * All source code, scripts, and downloaded challenge files are organized by challenge inside the deliverable directory.
   * All screenshots and visual proof of completion are located in the evidence directory.
 
 ***
@@ -34,24 +35,24 @@ For this Extracurricular Assignment, I participated in picoCTF, an online cybers
 * **Proof of Participation:**
 
   **Challenge Briefing:** The prompt regarding the suspicious, oversized log file.
-  ![Challenge Description](evidence/FlaginFlame1_desc.png)
+  ![Challenge Description](evidence/FlagInFlame1_desc.png)
 
   **Base64 Decoding:** Using certutil to decode the fake log file into a hidden PNG image.
-  ![Base64 Decoding Command](evidence/FlaginFlame2_uncoverHiddenlmage.png)
+  ![Base64 Decoding Command](evidence/FlagInFlame2_uncoverHiddenlmage.png)
 
   **Artifact Discovery:** The decoded image revealing the hex-encoded string at the bottom.
-  ![Revealed Hex String Image](evidence/FlaginFlame3_hiddenlmage.png)
+  ![Revealed Hex String Image](evidence/FlagInFlame3_hiddenlmage.png)
 
   **Hexadecimal Decoding:** Running the PowerShell command to translate the hex string into the readable flag.
-  ![PowerShell Hex Decoding](evidence/FlaginFlame4_decodeHex.png)
+  ![PowerShell Hex Decoding](evidence/FlagInFlame4_decodeHex.png)
 
   **Challenge Completion:** Successful submission of the decoded flag on the picoCTF platform.
-  ![picoCTF Success Banner](evidence/FlaginFlame5_done.png)
+  ![picoCTF Success Banner](evidence/FlagInFlame5_done.png)
 
 ### 3. WebDecode (Web Exploitation)
 * **Location:** deliverable/web-decode
 * **Description:** A web vulnerability challenge requiring the use of browser inspection tools to find hidden data on an on-demand web instance.
-* **Solution:** I used the browser's Developer Tools to inspect the DOM of the target website's "About" page. I located an anomalous Base64 encoded string hidden as an attribute within a `<section>` tag. I then used a PowerShell command to decode the Base64 string into the flag.
+* **Solution:** I used the browser's Developer Tools to inspect the DOM of the target website's "About" page. I located an anomalous Base64 encoded string hidden as an attribute within a section tag. I then used a PowerShell command to decode the Base64 string into the flag.
 * **Proof of Participation:**
 
   **Challenge Briefing:** The challenge instructions regarding the web inspector.
@@ -107,3 +108,9 @@ For this Extracurricular Assignment, I participated in picoCTF, an online cybers
 
   **Challenge Completion:** Successful submission of the flag on the picoCTF platform.
   ![picoCTF Success Banner](evidence/LocalAuthority6_done.png)
+
+  ***
+
+## Extracurricular Reflection
+
+For a deeper look into the learning process, the technical decisions I made during these challenges, and my key takeaways from this activity, please read my full [EA2 Reflection Report](REFLECTION.md).
